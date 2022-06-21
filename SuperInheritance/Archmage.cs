@@ -8,6 +8,9 @@ namespace MagicalInheritance
         public Archmage(string Title) : base(Title)
         { }
 
+        public Archmage(string title, string origin) : base(title, origin)
+        { }
+
         public override Storm CastRainStorm()
         {
             return new Storm("rain", true, Title);
